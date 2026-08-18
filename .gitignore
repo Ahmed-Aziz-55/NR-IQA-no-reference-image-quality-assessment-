@@ -36,3 +36,7 @@ logs/
 # Environment/secrets
 .env
 *.env.local
+COFW_color/
+koniq10k/
+koniq10k_512x384/
+koniq10k_512x384/

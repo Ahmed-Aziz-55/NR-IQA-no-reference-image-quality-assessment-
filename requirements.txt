@@ -1,3 +1,13 @@
-numpy
-opencv-python
-pytest
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.4
+numpy==2.2.1
+opencv-python-headless==4.10.0.84
+onnxruntime==1.20.1
+
+# Needed at runtime to unpickle and run the trained Suitability model
+# (scripts/train_suitability_model.py) — not just for training anymore.
+scikit-learn==1.9.0
+joblib==1.5.3
+pandas==2.2.3

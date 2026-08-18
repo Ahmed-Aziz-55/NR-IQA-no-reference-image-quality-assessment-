@@ -1,0 +1,101 @@
+[33m872e8c4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m docker updated
+ .dockerignore                             |  38 [32m+++++++[m
+ COFW_color/COFW_test_color.mat            | Bin [31m0[m -> [32m120945708[m bytes
+ COFW_color/COFW_train_color.mat           | Bin [31m0[m -> [32m388659959[m bytes
+ Dockerfile                                |  34 [32m++++++[m
+ README.md                                 | 123 [32m+++++++++++++++++[m[31m---[m
+ app/{heuristics => api}/__init__.py       |   0
+ app/api/assess.py                         | 327 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ app/api/main.py                           | 126 [32m+++++++++++++++++++++[m
+ app/api/schemas.py                        | 122 [32m++++++++++++++++++++[m
+ app/decision/__init__.py                  |   0
+ app/quality/__init__.py                   |   0
+ app/quality/classical/__init__.py         |   0
+ app/quality/classical/exposure.py         |  39 [32m+++++++[m
+ app/quality/classical/framing.py          | 508 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ app/quality/classical/glare.py            | 171 [32m++++++++++++++++++++++++++++[m
+ app/quality/classical/motion.py           | 183 [32m++++++++++++++++++++++++++++++[m
+ app/quality/classical/resolution.py       |  88 [32m+++++++++++++++[m
+ app/quality/semantic/__init__.py          |   0
+ app/quality/semantic/framing.py           | 508 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ app/quality/semantic/occlusion.py         | 306 [32m+++++++++++++++++++++++++++++++++++++++++++++++++[m
+ app/schemas/__init__.py                   |   0
+ docker-compose.yml                        |   8 [32m++[m
+ docs/architecture.md                      | 106 [32m+++++++++++++++++[m
+ docs/datasets.md                          | 114 [32m++++++++++++++++++[m[31m-[m
+ docs/decisions.md                         | 181 [32m+++++++++++++++++++++++++++[m[31m--[m
+ docs/evaluation.md                        | 111 [32m+++++++++++++++++[m[31m-[m
+ docs/features/blur.md                     |  61 [32m++++++[m[31m----[m
+ docs/features/exposure.md                 |  88 [32m+++++++++++[m[31m----[m
+ docs/features/framing.md                  | 151 [32m+++++++++++++++++++++[m[31m----[m
+ docs/features/glare.md                    |  83 [32m++++++++++[m[31m----[m
+ docs/features/motion.md                   | 103 [32m+++++++++++++[m[31m----[m
+ docs/features/occlusion.md                | 105 [32m+++++++++++++[m[31m----[m
+ docs/features/resolution.md               | 101 [32m+++++++++++++[m[31m----[m
+ docs/research.md                          | 128 [32m++++++++++++++++++++[m[31m-[m
+ koniq10k_512x384/512x384/10004473376.jpg  | Bin [31m0[m -> [32m130796[m bytes
+ koniq10k_512x384/512x384/10007357496.jpg  | Bin [31m0[m -> [32m106301[m bytes
+ koniq10k_512x384/512x384/10007903636.jpg  | Bin [31m0[m -> [32m86236[m bytes
+ koniq10k_512x384/512x384/10009096245.jpg  | Bin [31m0[m -> [32m60642[m bytes
+ koniq10k_512x384/512x384/100117038.jpg    | Bin [31m0[m -> [32m85618[m bytes
+ koniq10k_512x384/512x384/10012398043.jpg  | Bin [31m0[m -> [32m80504[m bytes
+ koniq10k_512x384/512x384/10013822223.jpg  | Bin [31m0[m -> [32m30244[m bytes
+ koniq10k_512x384/512x384/10014002683.jpg  | Bin [31m0[m -> [32m44053[m bytes
+ koniq10k_512x384/512x384/10017119924.jpg  | Bin [31m0[m -> [32m122777[m bytes
+ koniq10k_512x384/512x384/10020766793.jpg  | Bin [31m0[m -> [32m107497[m bytes
+ koniq10k_512x384/512x384/10020891105.jpg  | Bin [31m0[m -> [32m89169[m bytes
+ koniq10k_512x384/512x384/10022757465.jpg  | Bin [31m0[m -> [32m50891[m bytes
+ koniq10k_512x384/512x384/10022844623.jpg  | Bin [31m0[m -> [32m90834[m bytes
+ koniq10k_512x384/512x384/10027545463.jpg  | Bin [31m0[m -> [32m71377[m bytes
+ koniq10k_512x384/512x384/10027582235.jpg  | Bin [31m0[m -> [32m84464[m bytes
+ koniq10k_512x384/512x384/10029841663.jpg  | Bin [31m0[m -> [32m96155[m bytes
+ koniq10k_512x384/512x384/10031298826.jpg  | Bin [31m0[m -> [32m67519[m bytes
+ koniq10k_512x384/512x384/10031913154.jpg  | Bin [31m0[m -> [32m111113[m bytes
+ koniq10k_512x384/512x384/10039534103.jpg  | Bin [31m0[m -> [32m22128[m bytes
+ koniq10k_512x384/512x384/10041870415.jpg  | Bin [31m0[m -> [32m107690[m bytes
+ koniq10k_512x384/512x384/10043785683.jpg  | Bin [31m0[m -> [32m139443[m bytes
+ koniq10k_512x384/512x384/10047832035.jpg  | Bin [31m0[m -> [32m70351[m bytes
+ koniq10k_512x384/512x384/10048365153.jpg  | Bin [31m0[m -> [32m100977[m bytes
+ koniq10k_512x384/512x384/10050349236.jpg  | Bin [31m0[m -> [32m42487[m bytes
+ koniq10k_512x384/512x384/10058760545.jpg  | Bin [31m0[m -> [32m51258[m bytes
+ koniq10k_512x384/512x384/10059344614.jpg  | Bin [31m0[m -> [32m90968[m bytes
+ koniq10k_512x384/512x384/10061596254.jpg  | Bin [31m0[m -> [32m47353[m bytes
+ koniq10k_512x384/512x384/10067457634.jpg  | Bin [31m0[m -> [32m97761[m bytes
+ koniq10k_512x384/512x384/10068507976.jpg  | Bin [31m0[m -> [32m98986[m bytes
+ koniq10k_512x384/512x384/10068778516.jpg  | Bin [31m0[m -> [32m104267[m bytes
+ koniq10k_512x384/512x384/10069534975.jpg  | Bin [31m0[m -> [32m107989[m bytes
+ koniq10k_512x384/512x384/10071864114.jpg  | Bin [31m0[m -> [32m48678[m bytes
+ koniq10k_512x384/512x384/10075168775.jpg  | Bin [31m0[m -> [32m43062[m bytes
+ koniq10k_512x384/512x384/10077468576.jpg  | Bin [31m0[m -> [32m92704[m bytes
+ koniq10k_512x384/512x384/10077880165.jpg  | Bin [31m0[m -> [32m78072[m bytes
+ koniq10k_512x384/512x384/10079711433.jpg  | Bin [31m0[m -> [32m40689[m bytes
+ koniq10k_512x384/512x384/10082923485.jpg  | Bin [31m0[m -> [32m67188[m bytes
+ koniq10k_512x384/512x384/10086300493.jpg  | Bin [31m0[m -> [32m166323[m bytes
+ koniq10k_512x384/512x384/100882570.jpg    | Bin [31m0[m -> [32m82146[m bytes
+ koniq10k_512x384/512x384/10089027076.jpg  | Bin [31m0[m -> [32m46595[m bytes
+ koniq10k_512x384/512x384/10089177336.jpg  | Bin [31m0[m -> [32m80743[m bytes
+ koniq10k_512x384/512x384/10091520555.jpg  | Bin [31m0[m -> [32m43693[m bytes
+ koniq10k_512x384/512x384/10093057603.jpg  | Bin [31m0[m -> [32m52423[m bytes
+ koniq10k_512x384/512x384/10094235786.jpg  | Bin [31m0[m -> [32m134013[m bytes
+ koniq10k_512x384/512x384/10110458216.jpg  | Bin [31m0[m -> [32m53957[m bytes
+ koniq10k_512x384/512x384/10111411235.jpg  | Bin [31m0[m -> [32m98376[m bytes
+ koniq10k_512x384/512x384/10113730664.jpg  | Bin [31m0[m -> [32m72048[m bytes
+ koniq10k_512x384/512x384/10115071674.jpg  | Bin [31m0[m -> [32m97990[m bytes
+ koniq10k_512x384/512x384/10118773964.jpg  | Bin [31m0[m -> [32m38231[m bytes
+ koniq10k_512x384/512x384/10121813934.jpg  | Bin [31m0[m -> [32m115728[m bytes
+ koniq10k_512x384/512x384/10125013364.jpg  | Bin [31m0[m -> [32m64890[m bytes
+ koniq10k_512x384/512x384/10126177964.jpg  | Bin [31m0[m -> [32m25212[m bytes
+ koniq10k_512x384/512x384/10126857344.jpg  | Bin [31m0[m -> [32m111689[m bytes
+ koniq10k_512x384/512x384/10130566006.jpg  | Bin [31m0[m -> [32m117701[m bytes
+ koniq10k_512x384/512x384/10131980434.jpg  | Bin [31m0[m -> [32m25089[m bytes
+ koniq10k_512x384/512x384/10133867305.jpg  | Bin [31m0[m -> [32m96387[m bytes
+ koniq10k_512x384/512x384/10134737015.jpg  | Bin [31m0[m -> [32m76201[m bytes
+ koniq10k_512x384/512x384/10140071304.jpg  | Bin [31m0[m -> [32m42971[m bytes
+ koniq10k_512x384/512x384/1014369849.jpg   | Bin [31m0[m -> [32m25641[m bytes
+ koniq10k_512x384/512x384/10147970884.jpg  | Bin [31m0[m -> [32m109500[m bytes
+ koniq10k_512x384/512x384/101484668.jpg    | Bin [31m0[m -> [32m49664[m bytes
+ koniq10k_512x384/512x384/10153847086.jpg  | Bin [31m0[m -> [32m78639[m bytes
+ koniq10k_512x384/512x384/10154367094.jpg  | Bin [31m0[m -> [32m59333[m bytes
+ koniq10k_512x384/512x384/10154991453.jpg  | Bin [31m0[m -> [32m94050[m bytes
+ koniq10k_512x384/512x384/10155925686.jpg  | Bin [31m0[m -> [32m70571[m bytes
+ koniq10k_512x384/512x384/101601008.jpg    | 
